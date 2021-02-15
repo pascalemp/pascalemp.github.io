@@ -15,8 +15,10 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 - Python:
     
     - Proficient, with over 5 years of experience both individually and within industry.
+    
     - Experience using a plethora of Data/ML libraries, namely: 
-        - ```NumPy```, ```Keras```, ```Tensorflow```, ```Pandas```, ```matplotlib```, ```PyTorch```
+      
+        - NumPy, Keras, Tensorflow, Pandas, matplotlib and PyTorch
 
 - Java:
     
