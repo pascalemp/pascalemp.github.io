@@ -14,5 +14,11 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <h2>Skills Portfolio</h2>
 
 <ul class="skill-list">
-	<li>Python: NumPy - Pandas - Keras - Tensorflow - PyTorch </li>
+	<li>Python: 
+        <li>NumPy</li>
+        <li>Pandas</li>
+        <li>Keras</li>
+        <li>Tensorflow</li> 
+        <li>PyTorch</li> 
+    </li>
 </ul>
