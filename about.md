@@ -8,16 +8,18 @@ Hi, I'm Michele. I'm currently a postgraduate studying Data Science at The Unive
 
 <h2>Languages and Technologies</h2>
 
-- Python:
+- ```Python```:
+    
     - Proficient, with over 5 years of experience both individually and within industry
     - Experience using a plethora of Data/ML libraries, namely: 
         ```NumPy```, ```Keras```, ```Tensorflow```, ```Pandas```, ```matplotlib``` and ```PyTorch```.
 
-- Java:
+- ```Java```:
+    
     - Familar, with around 2 years of experience at University and whilst partaking in internships
 
-- Exposure to C and C++
+- Exposure to ```C``` and ```C++```
 
-- Exposure to LISP and Haskell / Functional Paradigms
+- Exposure to ```LISP``` and ```Haskell``` / Functional Paradigms
 
 
