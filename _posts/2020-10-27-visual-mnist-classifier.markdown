@@ -13,6 +13,12 @@ author: pascalemp
 externalLink: false
 ---
 
+## Overview
+
+This project was created whilst learning the basics of PyQT5. I made use of some previous (very basic) Machine Learning projects I had completed in the past, in order to interface the two mediums into a minimalistic desktop application.
+
+*The code and datsets are available on my personal GitHub [here](https://github.com/pascalemp/mnist_gui).*
+
 The full MNIST database consists solely of handwritten digits. It has ```60,000``` training
 samples, and ```10,000``` test samples, with each sample represented by ```28x28``` pixels. Each pixel contains a
 value within the range ```[0,255]``` which represents it's grayscale value.
