@@ -12,7 +12,7 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 
 ## Languages and Technologies
 
-##### Python:
+#### Python:
 - NumPy, Keras, Tensorflow, Matplotlib, PyTorch and Pandas
 
 ```python
@@ -24,7 +24,7 @@ for years in range(0,5):
 print(f'I have {years_experience} years of Python experience.')
 ```
 
-##### Java:
+#### Java:
 ```java
 public class MyExperience{
 
