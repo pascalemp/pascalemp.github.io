@@ -39,3 +39,6 @@ There are a few package pre-requisites and I've enlisted these in the ```require
 I have included a small subset of ***64 test images*** in the ```data/test_samples``` directory. These are sampled from the larger test set in order for you use the GUI classifier. The code is very rudimentary and works solely on the MNIST image databsed - the aim for this project was just to become familiar with PyQT syntax rather than produce a flawless algorithm!  
 
 Run ```pyqt_window.py``` and select one of the images in the ```data/test_samples``` directory and the GUI will display the network classification output for the given digit.
+
+## Credits
+*Big Data Icon Header made by [UltimateArm](https://www.flaticon.com/authors/ultimatearm).*
