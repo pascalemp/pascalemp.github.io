@@ -13,19 +13,29 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 ## Languages and Technologies
 
 Python:
-    
-    *Proficient, with over 5 years of experience both individually and within industry.
-    
-    *Experience using a plethora of Data/ML libraries, namely: 
-      
-        *NumPy, Keras, Tensorflow, Pandas, matplotlib and PyTorch
+```python
+import numpy as np
+import tensorflow as tf
+import keras
+import pandas as pd
+import torch
+import matplotlib.pyplot as plt
+from modulefinder import ModuleFinder
 
-- Java:
-    
-    - Familar, with around 2 years of experience at University and whilst partaking in internships.
+skill_set = {}
 
-- Exposure to C++ and C.
+finder = ModuleFinder()
+finder.run_script("this_script.py")
 
-- Exposure to LISP and Haskell / Functional Paradigms.
+for name, mod in finder.modules.items():
+    skill_set.append(name)
 
+total_experience = 0
 
+for i in range(0,5):
+    experience += 1
+
+print(f'I have over {total_experience} years of total Python experience. \
+        I also have extensive experience with the following modules: \n
+        {skill_set}')
+```
