@@ -35,7 +35,8 @@ total_experience = 0
 for i in range(0,5):
     experience += 1
 
-print(f'I have over {total_experience} years of total Python experience. \
+print(f'I have {total_experience} years of Python experience. \
         I also have extensive experience with the following modules: \n
         {skill_set}')
+
 ```
