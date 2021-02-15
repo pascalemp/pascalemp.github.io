@@ -12,13 +12,13 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 
 ## Languages and Technologies
 
-- Python:
+Python:
     
-    - Proficient, with over 5 years of experience both individually and within industry.
+    *Proficient, with over 5 years of experience both individually and within industry.
     
-    - Experience using a plethora of Data/ML libraries, namely: 
+    *Experience using a plethora of Data/ML libraries, namely: 
       
-        - NumPy, Keras, Tensorflow, Pandas, matplotlib and PyTorch
+        *NumPy, Keras, Tensorflow, Pandas, matplotlib and PyTorch
 
 - Java:
     
