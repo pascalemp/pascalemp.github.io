@@ -79,7 +79,7 @@ The bulk of the processing comes from cleaning and formatting the dataset itself
     We will make a smaller, truncated version of our model and analyse the intermediary outputs of certain layers and display them visually to try and gain insight into how the model is _learning_.
 
 ## Code Repository
-*The code and project files are available on my GitHub [here](https://github.com/pascalemp/med-image-project).*
+*The code is available as a Jupyter Notebook on my GitHub [here](https://github.com/pascalemp/med-image-project).*
 
 ## Credits
 *Virus Icon Header made by [SmashIcons](https://www.flaticon.com/authors/smashicons).*
