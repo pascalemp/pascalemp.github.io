@@ -30,7 +30,7 @@ value within the range ```[0,255]``` which represents it's grayscale value.
 ## Installation
 There are a few package pre-requisites and I've enlisted these in the ```requirements.txt``` file in this repository. 
 
-1. ```git clone``` this repo into a local directory.
+1. ```git clone``` [this](https://github.com/pascalemp/mnist_gui) repo into a local directory.
 2. I recommend creating a virtual enviroment in order to install these packages in a local environment, but you're welcome to install them globally if you like. 
 3. Install the pre-requisite packages using ```pip3 install -r requirements.txt```
 4. Done!
