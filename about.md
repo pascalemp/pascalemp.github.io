@@ -13,6 +13,7 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 ## Languages and Technologies
 
 ##### Python:
+- NumPy, Keras, Tensorflow, Matplotlib, PyTorch and Pandas
 ```python
 years_experience = 0
 
