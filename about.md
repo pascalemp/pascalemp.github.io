@@ -14,16 +14,16 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 
 - Python:
     
-    - Proficient, with over 5 years of experience both individually and within industry
+    - Proficient, with over 5 years of experience both individually and within industry.
     - Experience using a plethora of Data/ML libraries, namely: 
-        ```NumPy```, ```Keras```, ```Tensorflow```, ```Pandas```, ```matplotlib``` and ```PyTorch```.
+        ```NumPy```, ```Keras```, ```Tensorflow```, ```Pandas```, ```matplotlib```, ```PyTorch```.
 
 - Java:
     
-    - Familar, with around 2 years of experience at University and whilst partaking in internships
+    - Familar, with around 2 years of experience at University and whilst partaking in internships.
 
-- Exposure to C and C
+- Exposure to C++ and C.
 
-- Exposure to LISP and Haskell / Functional Paradigms
+- Exposure to LISP and Haskell / Functional Paradigms.
 
 
