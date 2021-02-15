@@ -13,7 +13,7 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 ## Languages and Technologies
 
 #### Python:
-- NumPy, Keras, Tensorflow, Matplotlib, PyTorch and Pandas
+- NumPy, Keras, Tensorflow, Matplotlib, PyTorch and Pandas.
 
 ```python
 years_experience = 0
@@ -25,6 +25,8 @@ print(f'I have {years_experience} years of Python experience.')
 ```
 
 #### Java:
+- Object Oriented Design principles and methodologies, as well as exposure to JavaFX / GUI libraries.
+
 ```java
 public class MyExperience{
 
