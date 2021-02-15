@@ -24,6 +24,8 @@ This project was created at University as part of my final year project in order
 
 Content Based Image Retrieval, otherwise known as *‘CBIR’* is a method used to extract visually similar images from a large database, based on the features of a given query image. This project explores and presents a modified approach to CBIR by using artificial neural networks, as opposed to classical computer vision techniques. The method presented in the report utilises a *Siamese Neural Network* paired with a variation of One Shot Learning, which is trained on pairs of dissimilar images in order to extract image feature vectors. Visual similarity is then deduced by utilising a distance function that compares the distance between the two feature vectors returned by the network and this will therefore provide a measure of similarity based on the image content learned by the network.
 
+## Code Repository
+
 You can access the full PDF write-up <a href="https://pascalemp.github.io/CBIR-siamese-cnn/pdf/cbir.pdf" target="_blank">here</a> and the code associated with the project <a href="https://github.com/pascalemp/CBIR-siamese-cnn/" target="_blank">here</a>.
 
 ## Datasets
