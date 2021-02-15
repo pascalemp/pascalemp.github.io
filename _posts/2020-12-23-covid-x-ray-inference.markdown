@@ -3,7 +3,7 @@ title: "COVID-19 X-Ray Feature Inference using Convolutional Neural Networks"
 layout: post
 date: 2020-12-23 19:30
 tag: covid-inference
-image: assets/images/virus.png
+image: https://github.com/pascalemp/pascalemp.github.io/blob/main/assets/images/virus.png
 headerImage: true
 projects: true
 hidden: true # don't count this post in blog pagination
