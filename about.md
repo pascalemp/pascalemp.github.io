@@ -12,31 +12,31 @@ For more information, find me on [LinkedIn](https://www.linkedin.com/in/pascalem
 
 ## Languages and Technologies
 
-Python:
+***Python:***
 ```python
-import numpy as np
-import tensorflow as tf
-import keras
-import pandas as pd
-import torch
-import matplotlib.pyplot as plt
-from modulefinder import ModuleFinder
+years_experience = 0
 
-skill_set = {}
+for years in range(0,5):
+    years_experience += 1
 
-finder = ModuleFinder()
-finder.run_script("this_script.py")
+print(f'I have {years_experience} years of Python experience.')
+```
 
-for name, mod in finder.modules.items():
-    skill_set.append(name)
+***Java:***
+```java
+public class MyExperience{
 
-total_experience = 0
+     public static void main(String []args){
+        int years_experience = 0;
 
-for i in range(0,5):
-    experience += 1
+        for (int year = 0; year < 5; year++) {
+            years_experience += 1;
+        }
 
-print(f'I have {total_experience} years of Python experience. \
-        I also have extensive experience with the following modules: \n
-        {skill_set}')
-
+        String output = String.format("%s %d %s", "I have", 
+            years_experience, "years experience in Java.");
+        
+        System.out.println(output);
+    }
+}
 ```
