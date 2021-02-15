@@ -1,5 +1,5 @@
 ---
-title: "COVID-19 X-Ray Feature Inference using Convolutional Neural Networks"
+title: "*COVID-19 X-Ray Feature Inference using Convolutional Neural Networks*"
 layout: post
 date: 2020-12-23 19:30
 tag: covid-inference
