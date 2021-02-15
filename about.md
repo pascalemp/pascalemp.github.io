@@ -14,8 +14,8 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <h2>Language Portfolio</h2>
 
 <ul class="skill-list">
-	<li>Python - Proficient, with over 5 years of experience both individually and within industry.</li>
-	<li>Java - Familar, with around 2 years of experience at University and whilst partaking in internships.</li>
+	<li>Python - Proficient, with over 5 years of experience both individually and within industry</li>
+	<li>Java - Familar, with around 2 years of experience at University and whilst partaking in internships</li>
 	<li>Exposure to C and C++</li>
 	<li>Exposure to LISP and Haskell / Functional Paradigms</li>
 </ul>
