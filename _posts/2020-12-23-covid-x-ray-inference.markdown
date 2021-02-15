@@ -1,5 +1,5 @@
 ---
-title: "COVID X-Ray Feature Inference using CNNs"
+title: "COVID-19 X-Ray Feature Inference using CNNs"
 layout: post
 date: 2020-12-23 19:30
 tag: covid-inference
