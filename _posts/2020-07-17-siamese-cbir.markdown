@@ -1,5 +1,5 @@
 ---
-title: "Siamese-CBIR: Content Based Image Retrieval using Siamese Neural Networks"
+title: "Content Based Image Retrieval using Siamese Neural Networks"
 layout: post
 date: 2020-07-17 13:00
 tag: cbir
