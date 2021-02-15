@@ -34,7 +34,7 @@ In terms of image accuracy and quality, all images were initially screened by ph
 
 There are a few small issues with the data that may pose issues later during training; there is a significant class imbalance. In total, there are 1583 images classed as 'normal', in contrast to 4273 images classed as 'pneumonia', this equates to there being 2.7 times more images of the 'pneumonia' class than 'normal' class. It is not yet clear as to whether this will impact performance, but this will need to be considered prior to training our network.
 
-Another minor issue is regarding the image sizes, each image is of varying size, dependent on whether the images were taken anteriorly or posteriorly, which leads to slight variance in the aspect ratio. Because of this, we may need to consider an algorithm to determine 'regions of interest' in the images, prior to training. This will also need to be considered when pre-processing the data, but due to the uniform nature of X-Ray images in general, this shouldn't be an image if we are required to crop or downsample.
+Another minor issue is regarding the image sizes, each image is of varying size, dependent on whether the images were taken anteriorly or posteriorly, which leads to slight variance in the aspect ratio. Because of this, I may need to consider an algorithm to determine 'regions of interest' in the images, prior to training. This will also need to be considered when pre-processing the data, but due to the uniform nature of X-Ray images in general, this shouldn't be an issue if we're required to crop or downsample.
 
 The dataset itself is derived originally from [this](https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5) paper, but is downloaded from [this](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) Kaggle repository.
 
@@ -76,7 +76,7 @@ The bulk of the processing comes from cleaning and formatting the dataset itself
 
 * __Analysing and visualising the layer outputs for a variety of layers.__
 
-    We will make a smaller, truncated version of our model and analyse the intermediary outputs of certain layers and display them visually to try and gain insight into how the model is _learning_.
+    I will make a smaller, truncated version of our model and analyse the intermediary outputs of certain layers and display them visually to try and gain insight into how the model is _learning_.
 
 ## Code Repository
 *The code is available as a Jupyter Notebook on my GitHub [here](https://github.com/pascalemp/med-image-project).*
