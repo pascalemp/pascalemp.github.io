@@ -13,13 +13,13 @@ author: pascalemp
 externalLink: false
 ---
 
-***Note:** This network has already been trained. This is merely a small Python app to display the respective classification of a given input image from the MNIST dataset.*  
-
-- *The entire MNIST dataset is available at http://yann.lecun.com/exdb/mnist/ if you wish to train a network of your own.*
-
 The full MNIST database consists solely of handwritten digits. It has ```60,000``` training
 samples, and ```10,000``` test samples, with each sample represented by ```28x28``` pixels. Each pixel contains a
 value within the range ```[0,255]``` which represents it's grayscale value.
+
+***Note:** This network has already been trained. This is merely a small Python app to display the respective classification of a given input image from the MNIST dataset.*  
+
+- *The entire MNIST dataset is available [here](http://yann.lecun.com/exdb/mnist/) if you wish to train a network of your own.*
 
 ## Installation
 There are a few package pre-requisites and I've enlisted these in the ```requirements.txt``` file in this repository. 
