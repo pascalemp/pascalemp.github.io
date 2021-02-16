@@ -33,7 +33,7 @@ public class MyExperience{
      public static void main(String []args){
         int years_experience = 0;
 
-        for (int year = 0; year < 5; year++) {
+        for (int year = 0; year < 3; year++) {
             years_experience += 1;
         }
 
