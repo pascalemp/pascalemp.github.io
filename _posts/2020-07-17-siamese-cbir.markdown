@@ -1,5 +1,5 @@
 ---
-title: "Content Based Image Retrieval with Siamese Neural Networks"
+title: "Content Based Image Retrieval with Siamese Networks"
 # Title should be <= 45 characters but no less than 30.
 layout: post
 date: 2020-07-17 13:00
