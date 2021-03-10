@@ -1,5 +1,5 @@
 ---
-title: "Visual MNIST Classifier using PyQT5"
+title: "MNIST GUI Classifier using PyQT5"
 layout: post
 date: 2020-10-27 19:30
 tag: mnist-gui
