@@ -1,5 +1,6 @@
 ---
-title: "MNIST GUI Classifier using PyQT5"
+title: "MNIST GUI Classifier built using PyQT5"
+# Title should be <= 45 characters but no less than 30.
 layout: post
 date: 2020-10-27 19:30
 tag: mnist-gui

@@ -1,5 +1,6 @@
 ---
 title: "COVID-19 X-Ray Feature Inference using CNNs"
+# Title should be <= 45 characters but no less than 30.
 layout: post
 date: 2021-03-10 14:30
 tag: covid-inference
