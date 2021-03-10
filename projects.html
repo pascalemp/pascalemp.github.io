@@ -8,8 +8,9 @@ title: Projects
         {% if post.projects %}
             <div class="item {% if post.star %}star{% endif %}">
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
-                    <img src={{post.image}} width="64" height="64" align="absmiddle" style="float:left; padding-right:10px;">
+                    <img src={{post.image}} width="64" height="64" style="float:left; padding-right:10px;">
                     <h3 class="title">{{ post.title }}</h3>
+                    h3.title {text-align:center;}
                     <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
                 </a>
             </div>
