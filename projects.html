@@ -10,7 +10,7 @@ title: Projects
                 <a class="url" href="{% if post.externalLink %}{{ post.externalLink }}{% else %}{{ site.url }}{{ post.url }}{% endif %}">
                     <img src={{post.image}} width="64" height="64" style="float:left; padding-right:10px;">
                     <aside><time datetime="{{ post.date | date:"%d-%m-%Y" }}">{{ post.date | date: "%b %d %Y" }}</time></aside>
-                    <h3 class="title">{{ post.title }}</h3>
+                    <h3 class="title" style="text-align: center;">{{ post.title }}</h3>
             </div>
         {% endif %}
     {% endfor %}
