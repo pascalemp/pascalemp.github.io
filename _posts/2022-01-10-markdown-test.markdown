@@ -99,14 +99,14 @@ Figure 2: Conv2DTranspose - Source Image (Left) vs. Output (Right) after 10,000 
 ### Main Problem and Motivation
 
 - Assume we have many source images and a set of target images (i.e. Cats and Dogs) and want to map each unique cat with all of it’s features (face, colour, age etc.) to a unique dog with all of these features.
-- Formally, we assume we have two distributions $X,Y$ and we wish to define a function $F$ that ensures a bijective cross domain mapping:
+- Formally, we assume we have two distributions \\(X,Y\\) and we wish to define a function \\(F\\) that ensures a bijective cross domain mapping:
 
 $$
 F_{XY}: X \rightarrow Y
 $$
 
 - This effectively means that if we apply this function to all images of cats, we will get all images of dogs, and each generated dog from a cat, will be semantically consistent (with it’s visual features).
-- The issue is, we need to learn this cross-domain mapping $F_{XY}$ since we are attempting to generalise this in an unsupervised manner, with no labelled data.
+- The issue is, we need to learn this cross-domain mapping \\(F_{XY}\\) since we are attempting to generalise this in an unsupervised manner, with no labelled data.
 
 ### The Issue With This Generalisation
 
@@ -121,22 +121,22 @@ $$
 ### How to find a good \\(F_{XY}\\)?
 
 - The assumption we make is that there is a true “correct” mapping that we wish to uncover between the two distributions.
-- The goal is to take some image in the first distribution $X$ and pass to $F_{XY}$, such that we minimise the statistical distance between the output of $F_{XY}$ and the target distribution $Y$; formally we define this as follows:
+- The goal is to take some image in the first distribution \\(X\\) and pass to \\(F_{XY}\\), such that we minimise the statistical distance between the output of \\(F_{XY}\\) and the target distribution \\(Y\\); formally we define this as follows:
 
 ---
 
-Suppose that $F_{XY} : X \rightarrow Y$ is a function mapping $x \in X$ to $y \in Y$, where $X,Y$ are the source and target distributions respectively. We wish to minimise the statistical distance between the output of $F_{XY}$ and $Y$ in order to attain our goal of a bijective mapping:
+Suppose that \\(F_{XY} : X \rightarrow Y\\) is a function mapping \\(x \in X\\) to \\(y \in Y\\), where \\(X,Y\\) are the source and target distributions respectively. We wish to minimise the statistical distance between the output of \\(F_{XY}\\) and \\(Y\\) in order to attain our goal of a bijective mapping:
 
 $$
 \begin{equation}\min _{F \in \mathcal{F}} d(F(A), B)+R(F)\end{equation}
 $$
 
-***Note:** Above in $(1)$, $R(F)$ defines a regularization term that restricts certain transformations; this will be formalised more later, but this is the general mathematical premise of $F_{XY}$.* 
+***Note:** Above in \\((1)\\), \\(R(F)\\) defines a regularization term that restricts certain transformations; this will be formalised more later, but this is the general mathematical premise of \\(F_{XY}\\).* 
 
 ---
 
 Effectively, the smaller the returned distance, the closer the two images are, and the “stronger” the bijective mapping. By “stronger” I am referring to the fact that this is a heuristic approach to approximating this mapping, a true bijection would not be “strong” it would either map directly, or it wouldn’t!
 
-This function allows initialisation of source domain images as noise, which will likely generate a high statistical distance, from which we can optimise $F_{XY}$ in order to minimise the distance and produce reliable examples from the target distribution as the source distribution begins to converge to the target distribution.
+This function allows initialisation of source domain images as noise, which will likely generate a high statistical distance, from which we can optimise \\(F_{XY}\\) in order to minimise the distance and produce reliable examples from the target distribution as the source distribution begins to converge to the target distribution.
 
 ---
