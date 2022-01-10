@@ -118,7 +118,7 @@ $$
 - The many-to-many mapping problem is considerably more difficult to solve, and we need to first solve the much simpler one-to-one (bijective) mapping problem.
 - This issue can also arise with the cat-to-dog example, but we are assuming (for simplicity) that this is a more simpler bijective mapping only.
 
-### How to find a good $F_{XY}$?
+### How to find a good \(F_{XY}\)?
 
 - The assumption we make is that there is a true “correct” mapping that we wish to uncover between the two distributions.
 - The goal is to take some image in the first distribution $X$ and pass to $F_{XY}$, such that we minimise the statistical distance between the output of $F_{XY}$ and the target distribution $Y$; formally we define this as follows:
