@@ -4,7 +4,7 @@ title: "Content Based Image Retrieval with Siamese Networks"
 layout: post
 date: 2020-07-17 13:00
 tag: cbir
-image: https://image.flaticon.com/icons/png/512/2103/2103658.png
+image: assets/images/deep-learning.png
 #image: https://github.com/pascalemp/pascalemp.github.io/blob/main/assets/images/virus.png
 headerImage: true
 projects: true
