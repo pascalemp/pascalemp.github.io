@@ -1,6 +1,6 @@
 # main text of home
 name: Michele Pascale
-bio: Machine Learning Research Engineer | GameBench Labs
+bio: PhD Student in Mathematics | Queen Mary University of London
 
 # if it's an external image, update below for true
 # better with square images
@@ -54,7 +54,7 @@ email: pascalemp@outlook.com
 authors:
   pascalemp:
     name: Michele Pascale
-    bio: Machine Learning Research Engineer @ GameBench Labs
+    bio: PhD Student in Mathematics @ Queen Mary University of London
     external-image: false
     picture: assets/images/profile.jpg
    
