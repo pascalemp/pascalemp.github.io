@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import profile from '../data/profile.json';
+
+---
+
+<BaseLayout pageClass="home-page">
+  <section class="site-shell hero">
+    <div class="hero-copy">
+      <h1>Michele Pascale</h1>
+      <p class="lede">
+        Hi! I’m Michele, and I’m a PhD student in Mathematics working on the theoretical aspects of spatially varying regularisers for image reconstruction methods.
+      </p>
+      <div class="hero-details" aria-label="Profile details">
+        <p>
+          Supervised by{' '}
+          {
+            profile.intro.supervisors.map((supervisor, index) => (
+              <>
+                <a href={supervisor.href}>{supervisor.name}</a>
+                {index === profile.intro.supervisors.length - 2 ? ' and ' : ''}
+              </>
+            ))
+          }.
+        </p>
+        <p>{profile.intro.previous}</p>
+        <div>
+          <span class="detail-label">Research interests</span>
+          <div class="tag-list">
+            {profile.intro.focus.map((item) => <span class="tag">{item}</span>)}
+          </div>
+        </div>
+      </div>
+    </div>
+    <aside class="portrait-card" aria-label="Profile summary">
+      <div class="portrait-frame">
+        <img src="/images/profile.jpg" alt="Portrait of Michele Pascale" />
+      </div>
+      <div>
+        <strong>{profile.name}</strong>
+        <p>{profile.title} and {profile.affiliation}</p>
+      </div>
+    </aside>
+  </section>
+</BaseLayout>

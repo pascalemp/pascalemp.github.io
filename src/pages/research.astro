@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import publicationsData from '../data/publications.json';
+import talks from '../data/talks.json';
+
+const publications = [...publicationsData].sort((a, b) => Number(b.year || 0) - Number(a.year || 0));
+const publicationGroups = Object.entries(
+  publications.reduce((groups, paper) => {
+    const year = paper.year || 'Undated';
+    if (!groups[year]) groups[year] = [];
+    groups[year].push(paper);
+    return groups;
+  }, {})
+)
+  .sort((a, b) => Number(b[0]) - Number(a[0]))
+  .map(([year, papers]) => ({ year, papers }));
+const talkGroups = Object.entries(
+  talks.reduce((groups, talk) => {
+    const year = talk.year || 'Undated';
+    if (!groups[year]) groups[year] = [];
+    groups[year].push(talk);
+    return groups;
+  }, {})
+)
+  .sort((a, b) => Number(b[0]) - Number(a[0]))
+  .map(([year, talks]) => ({ year, talks }));
+---
+
+<BaseLayout title="Research" description="Research interests, selected publications, and talks.">
+  <section class="site-shell page-title">
+    <h1>Research</h1>
+    <p>I am interested in the theory of variational models for imaging inverse problems, with a particular focus on the functional-analytic properties of spatially varying regularisation methods. In particular, my work lies at the intersection of functional analysis, geometric measure theory, and functions of bounded variation (BV), where I study the analytical properties of reconstruction models and their interaction with modern learning-based techniques.</p>
+    <div class="grid page-title-grid">
+      <article class="card">
+        <h3>Spatially Varying Regularisation</h3>
+        <p>Mathematical analysis of spatially adaptive total-variation (TV) and TV-type regularisers for imaging inverse problems and reconstruction tasks.</p>
+      </article>
+      <article class="card">
+        <h3>BV Spaces & Variational Methods</h3>
+        <p>Functional-analytic and measure-theoretic tools for studying existence, stability, and analytical properties of reconstruction models.</p>
+      </article>
+      <article class="card">
+        <h3>Optimisation & Learning</h3>
+        <p>Variational optimisation methods, unrolled iterative schemes, and combined learning-based approaches to image reconstruction.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Publications & Preprints</h2>
+        <p>Selected publications and preprints.</p>
+      </div>
+    </div>
+    <div class="timeline">
+      {
+        publicationGroups.map((group) => (
+          <article class="timeline-item">
+            <div class="period">{group.year}</div>
+            <div>
+              <div class="publication-group">
+                {group.papers.map((paper) => (
+                  <article class="publication-entry">
+                    <h3>
+                      {paper.href ? (
+                        <a class="entry-title-link" href={paper.href}>
+                          {paper.title}
+                        </a>
+                      ) : (
+                        paper.title
+                      )}
+                    </h3>
+                    {paper.venue && <div class="venue">{paper.venue}</div>}
+                    {paper.authors && paper.authors.length > 0 && <p>{paper.authors.join(', ')}</p>}
+                    {paper.summary && <p>{paper.summary}</p>}
+                  </article>
+                ))}
+              </div>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Talks</h2>
+        <p>Selected research talks, presentations and posters.</p>
+      </div>
+    </div>
+    <div class="timeline">
+      {
+        talkGroups.map((group) => (
+        <article class="timeline-item">
+          <div class="period">{group.year}</div>
+          <div>
+            <div class="publication-group">
+              {group.talks.map((talk) => (
+                <article class="publication-entry">
+                  <h3>
+                    {talk.href ? (
+                      <a class="entry-title-link" href={talk.href} target="_blank" rel="noopener noreferrer">
+                        {talk.title}
+                      </a>
+                    ) : (
+                      talk.title
+                    )}
+                  </h3>
+                  <div class="venue">
+                    {talk.conference}
+                    {talk.location && <span class="talk-meta"> ({talk.location})</span>}
+                    {talk.type && <span class="talk-meta"> · {talk.type}</span>}
+                  </div>
+                  {talk.summary && <p>{talk.summary}</p>}
+                </article>
+              ))}
+            </div>
+          </div>
+        </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,97 @@
+{
+  "overview": [
+    "PhD student in Mathematics at Queen Mary University of London working on the theoretical aspects of inverse problems, machine learning, and mathematical imaging.",
+    "Previous research background in medical image computing, super-resolution, motion correction, generative models, and high-dimensional imaging datasets.",
+    "Industry experience in computer vision, remote inference, object detection, tracking, classification, cloud deployment, and data science."
+  ],
+  "education": [
+    {
+      "period": "2024-Present",
+      "title": "PhD Mathematics",
+      "institution": "Queen Mary University of London, London, U.K"
+    },
+    {
+      "period": "2022-2024",
+      "title": "MPhil Machine Learning and Medical Image Computing",
+      "institution": "University College London, London, United Kingdom"
+    },
+    {
+      "period": "2020-2021",
+      "title": "MSc Data Science and Analytics",
+      "institution": "The University of Leeds, Leeds, United Kingdom"
+    },
+    {
+      "period": "2017-2020",
+      "title": "BSc (Hons) Mathematics and Computer Science",
+      "institution": "The University of York, York, United Kingdom"
+    }
+  ],
+  "experience": [
+    {
+      "period": "August 2022-December 2024",
+      "title": "MPhil Researcher",
+      "institution": "University College London, London, United Kingdom",
+      "summary": "Developed image reconstruction, super-resolution, and motion correction algorithms using deep learning for high-dimensional imaging datasets.",
+      "highlights": [
+        "Worked across 2D and 3D computer vision, unsupervised learning, generative models, image reconstruction, and super-resolution.",
+        "Built research software for medical imaging experiments and reconstruction pipelines."
+      ]
+    },
+    {
+      "period": "December 2023-December 2024",
+      "title": "Machine Learning Research Engineer, Contractor",
+      "institution": "Overwatch Aerospace, London, United Kingdom",
+      "summary": "Researched and prototyped computer vision tools for resource-limited devices.",
+      "highlights": [
+        "Developed object detection, motion tracking, classification, and remote inference tools using deep learning.",
+        "Advised engineers and prototyped current machine learning approaches for applied computer vision systems."
+      ]
+    },
+    {
+      "period": "December 2021-December 2023",
+      "title": "Machine Learning Research Engineer",
+      "institution": "GameBench Labs, Bristol/London (Hybrid), United Kingdom",
+      "summary": "Developed audiovisual analysis, classification, and inference tools using signal processing and deep learning methods.",
+      "highlights": [
+        "Built object detection, tracking, and classification algorithms for real-time image analysis.",
+        "Prototyped various ML architectures with Python and then embedded and optimised in C++ using OpenCV with CUDA.",
+        "Developed bespoke signal-processing pipelines for latency detection and synchronisation analysis, employing waveform processing, short-time Fourier transforms (STFTs), frequency-domain analysis, spectral feature extraction, and statistical modelling of audiovisual data as part of a project with Google and their Stadia platform.",
+        "Deployed these piplines across Google Cloud Platform and developed APIs for platform-agnostic inference using raw audio buffer data."
+      ]
+    },
+    {
+      "period": "August 2021-December 2021",
+      "title": "Data Scientist",
+      "institution": "Tortoise Media, London, United Kingdom",
+      "summary": "Core researcher and developer for the Tortoise Global AI Index in 2021.",
+      "highlights": [
+      "Developed Python-based data engineering pipelines using Pandas, web scraping frameworks, APIs, and Google Cloud Platform (GCP).",
+      "Collected, processed, and analysed large-scale datasets spanning scientific publications, patents, venture investment, talent, and company activity.",
+      "Applied statistical modelling, ranking methodologies, and data validation techniques to generate internationally comparable AI capability metrics.",
+      "Contributed to the design and implementation of the index methodology used to evaluate AI readiness and innovation across countries."
+      ]
+    },
+{
+    "period": "Summer 2018 and 2019",
+    "title": "Software Development Intern",
+    "institution": "Siemens PLM Software, Cambridge, United Kingdom",
+    "summary": "Developed internal software engineering and automation tools supporting large-scale CAD and geometric modelling systems.",
+    "highlights": [
+      "Designed and implemented a build optimisation tool in Python using topological sorting of dependency graphs to automatically determine compilation order, enabling concurrent execution of regression test suites and significantly reducing testing and validation times.",
+      "Developed an automated visualisation and debugging framework for the Parasolid geometric modelling kernel, dynamically generating images of user-reported problematic regions to accelerate issue diagnosis and resolution by engineering teams."
+    ]
+}
+  ],
+  "skills": [
+    "Python",
+    "C++",
+    "MATLAB",
+    "PyTorch",
+    "TensorFlow",
+    "OpenCV",
+    "Google Cloud Platform",
+    "Git",
+    "Linux/Unix",
+    "LaTeX"
+  ]
+}

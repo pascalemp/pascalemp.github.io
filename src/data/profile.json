@@ -1,0 +1,49 @@
+{
+  "name": "Michele Pascale",
+  "title": "PhD Student in Mathematics",
+  "affiliation": "Queen Mary University of London",
+  "location": "London, United Kingdom",
+  "summary": "Hi! I'm Michele, and I'm a PhD student in Mathematics working on theoretical aspects of spatially varying regularisers and image reconstruction methods.",
+  "intro": {
+    "role": "PhD student in Mathematics at Queen Mary University of London",
+    "supervisors": [
+      {
+        "name": "Dr. Kostas Papafitsoros",
+        "href": "https://kostaspapafitsoros.weebly.com"
+      },
+      {
+        "name": "Professor Claudia Garetto",
+        "href": "https://sites.google.com/view/claudia-garetto-web/"
+      }
+    ],
+    "focus": [
+      "Inverse Problems",
+      "Mathematical Imaging",
+      "Variational Regularisation",
+      "Functional Analysis",
+      "Geometric Measure Theory",
+      "Convex Optimisation",
+      "Machine Learning"
+    ],
+    "previous": "Before my PhD, I completed an MPhil in Machine Learning at University College London, jointly funded by Great Ormond Street Hospital, developing super-resolution techniques for accelerated MRI."
+  },
+  "positioning": [
+    "Research interests include inverse problems, measure theory, mathematical imaging, and deep learning.",
+    "Industry experience across computer vision, data science, web scraping, public datasets, and research engineering.",
+    "I like work that joins rigorous mathematics with useful computational systems."
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/pascalemp"
+    },
+    {
+      "label": "Google Scholar",
+      "href": "https://scholar.google.com/citations?user=rXjDFPYAAAAJ&hl=en"
+    },
+    {
+      "label": "Email",
+      "href": "mailto:m.pascale@qmul.ac.uk"
+    }
+  ]
+}

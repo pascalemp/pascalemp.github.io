@@ -1,0 +1,25 @@
+---
+const { items } = Astro.props;
+---
+
+<div class="timeline">
+  {
+    items.map((item) => (
+      <article class="timeline-item">
+        <div class="period">{item.period}</div>
+        <div>
+          <h3>{item.title}</h3>
+          <div class="venue">{item.institution}</div>
+          <p>{item.summary}</p>
+          {
+            item.highlights && (
+              <ul class="compact-list">
+                {item.highlights.map((highlight) => <li>{highlight}</li>)}
+              </ul>
+            )
+          }
+        </div>
+      </article>
+    ))
+  }
+</div>

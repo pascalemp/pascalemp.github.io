@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Timeline from '../components/Timeline.astro';
+import cv from '../data/cv.json';
+---
+
+<BaseLayout title="CV" description="Academic and industry CV for Michele Pascale.">
+  <section class="site-shell page-title">
+    <h1>CV</h1>
+    <p>Education, research, industry experience, and selected skills.</p>
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Education</h2>
+        <p>Academic training.</p>
+      </div>
+    </div>
+    <Timeline items={cv.education} />
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Experience</h2>
+        <p>Research and industry roles.</p>
+      </div>
+    </div>
+    <Timeline items={cv.experience} />
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Skills</h2>
+        <p>Programming languages, libraries, tools, and research areas.</p>
+      </div>
+    </div>
+    <div class="tag-list">
+      {cv.skills.map((skill) => <span class="tag">{skill}</span>)}
+    </div>
+  </section>
+</BaseLayout>

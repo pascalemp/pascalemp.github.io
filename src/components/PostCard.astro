@@ -1,0 +1,21 @@
+---
+const { post } = Astro.props;
+const { data, slug } = post;
+---
+
+<a class="card card-link" href={`/blog/${slug}/`}>
+  <span class="date">
+    {
+      data.date.toLocaleDateString('en-GB', {
+        day: '2-digit',
+        month: 'short',
+        year: 'numeric'
+      })
+    }
+  </span>
+  <h3>{data.title}</h3>
+  <p>{data.description}</p>
+  <div class="tag-list" style="margin-top: 18px;">
+    {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+  </div>
+</a>
