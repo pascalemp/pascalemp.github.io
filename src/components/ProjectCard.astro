@@ -1,0 +1,15 @@
+---
+const { project } = Astro.props;
+const { data, slug } = project;
+---
+
+<a class="card card-link" href={`/projects/${slug}/`}>
+  <div class="meta-row">
+    <span class="date">{data.date.getFullYear()}</span>
+  </div>
+  <h3>{data.title}</h3>
+  <p>{data.description}</p>
+  <div class="tag-list" style="margin-top: 18px;">
+    {data.tags.map((tag) => <span class="tag">{tag}</span>)}
+  </div>
+</a>

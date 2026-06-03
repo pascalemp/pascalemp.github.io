@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import publications from '../data/publications.json';
+import talks from '../data/talks.json';
+---
+
+<BaseLayout title="Research" description="Research interests, selected publications, and talks.">
+  <section class="site-shell page-title">
+    <p class="eyebrow">Research</p>
+    <h1>Inverse problems, machine learning, and mathematical imaging.</h1>
+    <p>
+      My current work sits around rigorous mathematical questions motivated by imaging and modern learning-based reconstruction.
+    </p>
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Interests</h2>
+        <p>A concise map of the areas I am currently building around.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>Inverse Problems</h3>
+        <p>Regularisation, stability, reconstruction, and learned priors for ill-posed imaging problems.</p>
+      </article>
+      <article class="card">
+        <h3>Mathematical Imaging</h3>
+        <p>Computational approaches to medical and scientific imaging, with attention to the underlying operators.</p>
+      </article>
+      <article class="card">
+        <h3>Machine Learning</h3>
+        <p>Deep learning methods for reconstruction, representation, and analysis in imaging pipelines.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Selected Publications</h2>
+        <p>Edit entries in <code>src/data/publications.json</code>.</p>
+      </div>
+    </div>
+    <div class="timeline">
+      {
+        publications.map((paper) => (
+          <article class="timeline-item">
+            <div class="period">{paper.year}</div>
+            <div>
+              <h3>{paper.title}</h3>
+              <div class="venue">{paper.venue}</div>
+              <p>{paper.summary}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Talks</h2>
+        <p>Edit entries in <code>src/data/talks.json</code>.</p>
+      </div>
+    </div>
+    <div class="timeline">
+      {
+        talks.map((talk) => (
+          <article class="timeline-item">
+            <div class="period">{talk.year}</div>
+            <div>
+              <h3>{talk.title}</h3>
+              <div class="venue">{talk.venue}</div>
+              <p>{talk.summary}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Timeline from '../components/Timeline.astro';
+import cv from '../data/cv.json';
+import profile from '../data/profile.json';
+---
+
+<BaseLayout title="CV" description="Academic and industry CV for Michele Pascale.">
+  <section class="site-shell page-title">
+    <p class="eyebrow">CV</p>
+    <h1>Academic and industry experience.</h1>
+    <p>A public web CV outlining research, education, technical experience, and selected skills.</p>
+    <div class="actions">
+      {profile.links.map((link) => <a class="button" href={link.href}>{link.label}</a>)}
+    </div>
+  </section>
+
+  <section class="site-shell section">
+    <div class="grid">
+      {cv.overview.map((item) => <article class="card"><p>{item}</p></article>)}
+    </div>
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Education</h2>
+        <p>Academic training in mathematics, machine learning, medical image computing, and data science.</p>
+      </div>
+    </div>
+    <Timeline items={cv.education} />
+  </section>
+
+  <section class="site-shell section">
+    <div class="section-header">
+      <div>
+        <h2>Experience</h2>
+        <p>Research and industry roles across imaging, computer vision, machine learning, and data systems.</p>
+      </div>
+    </div>
+    <Timeline items={cv.experience} />
+  </section>
+</BaseLayout>

@@ -1,0 +1,9 @@
+[
+  {
+    "title": "Unsupervised Learning for Generalised Super-Resolution of 3D Anisotropic Medical Images via Domain Transfer",
+    "venue": "MPhil thesis, University College London",
+    "year": "2024",
+    "summary": "Introduced CLADE, a CycleGAN-inspired framework for unsupervised super-resolution reconstruction in anisotropic 3D medical imaging.",
+    "links": []
+  }
+]
