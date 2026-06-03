@@ -394,6 +394,37 @@ h3 {
   padding-top: 18px;
 }
 
+.publication-group {
+  display: grid;
+  gap: 22px;
+}
+
+.publication-entry + .publication-entry {
+  border-top: 1px solid var(--line);
+  padding-top: 22px;
+}
+
+.publication-entry h3 {
+  margin-bottom: 6px;
+}
+
+.entry-title-link {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.entry-title-link:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--muted), transparent 20%);
+  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.14em;
+}
+
+.talk-meta {
+  color: var(--muted);
+}
+
 .compact-list {
   margin: 12px 0 0;
   padding-left: 1.2rem;

@@ -1,12 +1,49 @@
 [
   {
-    "id": "mphil-thesis-2024",
-    "title": "Unsupervised Learning for Generalised Super-Resolution of 3D Anisotropic Medical Images via Domain Transfer",
-    "authors": ["Michele Pascale"],
-    "venue": "MPhil Thesis, University College London",
-    "year": "2024",
-    "summary": "Introduced CLADE, a CycleGAN-inspired framework for unsupervised super-resolution reconstruction in anisotropic 3D medical imaging.",
-    "href": "",
-    "featured": true
-  }
+  "id": "jaubert-sci-rep-2024",
+  "title": "Training Deep Learning Based Dynamic MR Image Reconstruction Using Open-Source Natural Videos",
+  "authors": [
+    "Olivier Jaubert",
+    "Michele Pascale",
+    "Javier Montalt-Tordera",
+    "Julius Akesson",
+    "Ruta Virsinskaite",
+    "Daniel Knight",
+    "Simon Arridge",
+    "Jennifer Steeden",
+    "Vivek Muthurangu"
+  ],
+  "venue": "Nature Scientific Reports",
+  "year": "2024",
+  "href": "https://doi.org/10.1038/s41598-024-62294-7",
+  "featured": true
+},
+{
+  "id": "wrobel-arxiv-2025",
+  "title": "High Resolution Isotropic 3D Cine Imaging with Automated Segmentation using Concatenated 2D Real-time Imaging and Deep Learning",
+  "authors": [
+    "Mark Wrobel",
+    "Michele Pascale",
+    "Tina Yao",
+    "Ruaraidh Campbell",
+    "Elena Milano",
+    "Michael Quail",
+    "Jennifer Steeden",
+    "Vivek Muthurangu"
+  ],
+  "venue": "arXiv Preprint",
+  "year": "2025",
+  "href": "https://arxiv.org/abs/2506.22532",
+  "featured": true
+},
+{
+  "id": "mphil-thesis-2025",
+  "title": "Unsupervised Learning for Generalised Super-Resolution of 3D Anisotropic Medical Images via Domain Transfer",
+  "authors": ["Michele Pascale"],
+  "venue": "MPhil Thesis, University College London",
+  "year": "2025",
+  "href": "https://discovery.ucl.ac.uk/id/eprint/10207159/",
+  "featured": true
+}
+
 ]
