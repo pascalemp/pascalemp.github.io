@@ -55,12 +55,12 @@
       "period": "December 2021-December 2023",
       "title": "Machine Learning Research Engineer",
       "institution": "GameBench Labs",
-      "summary": "Developed image analysis, classification, and inference tools using deep learning.",
+      "summary": "Developed audiovisual analysis, classification, and inference tools using signal processing and deep learning methods.",
       "highlights": [
-        "Built Python tools and embedded them into C++ systems using OpenCV and CUDA.",
-        "Developed audio-onset detection for latency analysis as part of a Google Stadia project.",
-        "Deployed neural network architectures on Google Cloud Platform and developed APIs for platform-agnostic inference over raw audio buffer data.",
-        "Implemented object detection, tracking, and classification algorithms for real-time audiovisual data streams."
+        "Built object detection, tracking, and classification algorithms for real-time image analysis.",
+        "Prototyped various ML architectures with Python and then embedded and optimised in C++ using OpenCV with CUDA.",
+        "Developed bespoke signal-processing pipelines for latency detection and synchronisation analysis, employing waveform processing, short-time Fourier transforms (STFTs), frequency-domain analysis, spectral feature extraction, and statistical modelling of audiovisual data as part of a project with Google and their Stadia platform.",
+        "Deployed these piplines across Google Cloud Platform and developed APIs for platform-agnostic inference using raw audio buffer data."
       ]
     },
     {
@@ -69,19 +69,43 @@
       "institution": "Tortoise Media",
       "summary": "Core researcher and developer for the Tortoise Global AI Index in 2021.",
       "highlights": [
-        "Researched, collected, and analysed large datasets using machine learning, web scraping, and APIs.",
-        "Performed statistical analysis and ranking of public company reports, patents, and global research output datasets."
+      "Developed Python-based data engineering pipelines using Pandas, web scraping frameworks, APIs, and Google Cloud Platform (GCP).",
+      "Collected, processed, and analysed large-scale datasets spanning scientific publications, patents, venture investment, talent, and company activity.",
+      "Applied statistical modelling, ranking methodologies, and data validation techniques to generate internationally comparable AI capability metrics.",
+      "Contributed to the design and implementation of the index methodology used to evaluate AI readiness and innovation across countries."
       ]
     },
-    {
-      "period": "Summer 2018 and 2019",
-      "title": "Software Development Intern",
-      "institution": "Siemens PLM Software",
-      "summary": "Worked on internal software development tools in Python, C, and LISP.",
-      "highlights": [
-        "Developed an in-house compilation optimiser using a topological graph traversal algorithm to enable concurrent compilation and speed up regression testing.",
-        "Built a system for dynamically generating images of 3D models from region-of-interest data."
-      ]
-    }
+{
+    "period": "Summer 2018 and 2019",
+    "title": "Software Development Intern",
+    "institution": "Siemens PLM Software",
+    "summary": "Developed internal software engineering and automation tools supporting large-scale CAD and geometric modelling systems.",
+    "highlights": [
+      "Designed and implemented a build optimisation tool in Python using topological sorting of dependency graphs to automatically determine compilation order, enabling concurrent execution of regression test suites and significantly reducing testing and validation times.",
+      "Developed an automated visualisation and debugging framework for the Parasolid geometric modelling kernel, dynamically generating images of user-reported problematic regions to accelerate issue diagnosis and resolution by engineering teams."
+    ]
+}
+  ],
+  "skills": [
+    "Python",
+    "C++",
+    "C",
+    "MATLAB",
+    "Java",
+    "PyTorch",
+    "TensorFlow",
+    "NumPy",
+    "SciPy",
+    "OpenCV",
+    "CUDA",
+    "Google Cloud Platform",
+    "Git",
+    "Linux/Unix",
+    "LaTeX",
+    "Machine learning",
+    "Computer vision",
+    "Medical imaging",
+    "Variational methods",
+    "Inverse problems"
   ]
 }
