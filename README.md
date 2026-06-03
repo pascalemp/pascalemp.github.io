@@ -1,8 +1,8 @@
-# pascalemp.github.io
+# Personal Webpage
 
 Modern academic and industry CV site built with Astro.
 
-## Local development
+## How to: Local development
 
 ```bash
 npm install
