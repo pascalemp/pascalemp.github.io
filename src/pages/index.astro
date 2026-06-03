@@ -1,13 +1,16 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import profile from '../data/profile.json';
+
 ---
 
 <BaseLayout pageClass="home-page">
   <section class="site-shell hero">
     <div class="hero-copy">
       <h1>Michele Pascale</h1>
-      <p class="lede">{profile.summary}</p>
+      <p class="lede">
+        Hi! I’m Michele, and I’m a PhD student in Mathematics working on the theoretical aspects of spatially varying regularisers for image reconstruction methods.
+      </p>
       <div class="hero-details" aria-label="Profile details">
         <p>
           Supervised by{' '}

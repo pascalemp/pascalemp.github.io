@@ -8,32 +8,20 @@ const publications = [...publicationsData].sort((a, b) => Number(b.year || 0) - 
 
 <BaseLayout title="Research" description="Research interests, selected publications, and talks.">
   <section class="site-shell page-title">
-    <p class="eyebrow">Research</p>
-    <h1>Inverse problems, machine learning, and mathematical imaging.</h1>
-    <p>
-      My current work sits around rigorous mathematical questions motivated by imaging and modern learning-based reconstruction.
-    </p>
-  </section>
-
-  <section class="site-shell section">
-    <div class="section-header">
-      <div>
-        <h2>Interests</h2>
-        <p>A concise map of the areas I am currently building around.</p>
-      </div>
-    </div>
-    <div class="grid">
+    <h1>Research</h1>
+    <p>I am interested in the theory of variational models for imaging inverse problems, with a particular focus on the functional-analytic properties of spatially varying regularisation methods. In particular, my work lies at the intersection of functional analysis, geometric measure theory, and functions of bounded variation (BV), where I study the analytical properties of reconstruction models and their interaction with modern learning-based techniques.</p>
+    <div class="grid page-title-grid">
       <article class="card">
-        <h3>Inverse Problems</h3>
-        <p>Regularisation, stability, reconstruction, and learned priors for ill-posed imaging problems.</p>
+        <h3>Spatially Varying Regularisation</h3>
+        <p>Mathematical analysis of spatially adaptive total-variation (TV) and TV-type regularisers for imaging inverse problems and reconstruction tasks.</p>
       </article>
       <article class="card">
-        <h3>Mathematical Imaging</h3>
-        <p>Computational approaches to medical and scientific imaging, with attention to the underlying operators.</p>
+        <h3>BV Spaces & Variational Methods</h3>
+        <p>Functional-analytic and measure-theoretic tools for studying existence, stability, and analytical properties of reconstruction models.</p>
       </article>
       <article class="card">
-        <h3>Machine Learning</h3>
-        <p>Deep learning methods for reconstruction, representation, and analysis in imaging pipelines.</p>
+        <h3>Optimisation & Learning</h3>
+        <p>Variational optimisation methods, unrolled iterative schemes, and combined learning-based approaches to image reconstruction.</p>
       </article>
     </div>
   </section>
@@ -42,7 +30,7 @@ const publications = [...publicationsData].sort((a, b) => Number(b.year || 0) - 
     <div class="section-header">
       <div>
         <h2>Publications</h2>
-        <p>Edit entries in <code>src/data/publications.json</code>.</p>
+        <p>Manually maintained in <code>src/data/publications.json</code>.</p>
       </div>
     </div>
     <div class="timeline">
@@ -67,7 +55,7 @@ const publications = [...publicationsData].sort((a, b) => Number(b.year || 0) - 
     <div class="section-header">
       <div>
         <h2>Talks</h2>
-        <p>Edit entries in <code>src/data/talks.json</code>.</p>
+        <p>Selected seminars and presentations.</p>
       </div>
     </div>
     <div class="timeline">

@@ -3,7 +3,7 @@
     "id": "mphil-thesis-2024",
     "title": "Unsupervised Learning for Generalised Super-Resolution of 3D Anisotropic Medical Images via Domain Transfer",
     "authors": ["Michele Pascale"],
-    "venue": "MPhil thesis, University College London",
+    "venue": "MPhil Thesis, University College London",
     "year": "2024",
     "summary": "Introduced CLADE, a CycleGAN-inspired framework for unsupervised super-resolution reconstruction in anisotropic 3D medical imaging.",
     "href": "",

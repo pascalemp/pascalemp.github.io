@@ -412,14 +412,23 @@ h3 {
 }
 
 .page-title {
-  padding: 58px 0 34px;
+  padding: 48px 0 28px;
+}
+
+.page-title h1 {
+  max-width: 760px;
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
 }
 
 .page-title p {
   max-width: 780px;
-  margin: 18px 0 0;
+  margin: 12px 0 0;
   color: var(--muted);
-  font-size: 1.15rem;
+  font-size: 1.05rem;
+}
+
+.page-title-grid {
+  margin-top: 28px;
 }
 
 .article-shell {
