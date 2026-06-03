@@ -49,3 +49,7 @@ Edit:
 - `src/data/cv.json`
 - `src/data/publications.json`
 - `src/data/talks.json`
+
+## Update publications
+
+Add and edit publication entries in `src/data/publications.json`. Use `summary` to control the description shown on the site, `href` for a publication link, and `featured: true` for publications that should appear on the homepage.

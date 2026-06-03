@@ -6,7 +6,8 @@ import profile from '../data/profile.json';
 
 const {
   title = profile.name,
-  description = profile.summary
+  description = profile.summary,
+  pageClass = ''
 } = Astro.props;
 ---
 
@@ -19,7 +20,7 @@ const {
     <meta name="generator" content={Astro.generator} />
     <title>{title === profile.name ? title : `${title} | ${profile.name}`}</title>
   </head>
-  <body>
+  <body class={pageClass}>
     <Header />
     <main>
       <slot />

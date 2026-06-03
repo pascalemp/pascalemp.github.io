@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import publications from '../data/publications.json';
+import publicationsData from '../data/publications.json';
 import talks from '../data/talks.json';
+
+const publications = [...publicationsData].sort((a, b) => Number(b.year || 0) - Number(a.year || 0));
 ---
 
 <BaseLayout title="Research" description="Research interests, selected publications, and talks.">
@@ -39,7 +41,7 @@ import talks from '../data/talks.json';
   <section class="site-shell section">
     <div class="section-header">
       <div>
-        <h2>Selected Publications</h2>
+        <h2>Publications</h2>
         <p>Edit entries in <code>src/data/publications.json</code>.</p>
       </div>
     </div>
@@ -50,8 +52,10 @@ import talks from '../data/talks.json';
             <div class="period">{paper.year}</div>
             <div>
               <h3>{paper.title}</h3>
-              <div class="venue">{paper.venue}</div>
-              <p>{paper.summary}</p>
+              {paper.venue && <div class="venue">{paper.venue}</div>}
+              {paper.authors && paper.authors.length > 0 && <p>{paper.authors.join(', ')}</p>}
+              {paper.summary && <p>{paper.summary}</p>}
+              {paper.href && <a href={paper.href}>View publication</a>}
             </div>
           </article>
         ))

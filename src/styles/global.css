@@ -65,6 +65,7 @@ html {
 }
 
 body {
+  min-height: 100vh;
   margin: 0;
   color: var(--text);
   background:
@@ -72,6 +73,17 @@ body {
     var(--bg);
   font-size: 16px;
   line-height: 1.65;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-page main {
+  display: flex;
+  flex: 1;
+  align-items: center;
 }
 
 a {
@@ -151,7 +163,7 @@ img {
   grid-template-columns: minmax(0, 1fr) clamp(220px, 24vw, 300px);
   gap: clamp(28px, 5vw, 56px);
   align-items: center;
-  padding: clamp(42px, 7vw, 72px) 0 46px;
+  padding: clamp(32px, 6vw, 56px) 0;
 }
 
 .eyebrow {
@@ -486,7 +498,7 @@ h3 {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  padding: 32px 0;
+  padding: 24px 0;
   color: var(--muted);
   font-size: 0.94rem;
 }
@@ -528,6 +540,7 @@ h3 {
   .hero {
     gap: 28px;
     padding-top: 38px;
+    padding-bottom: 38px;
   }
 
   h1 {
@@ -547,8 +560,7 @@ h3 {
   }
 
   .portrait-card {
-    width: min(100%, 320px);
-    justify-self: start;
+    display: none;
   }
 
   .section-header {
