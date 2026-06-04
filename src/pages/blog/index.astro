@@ -4,8 +4,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 
 const posts = (await getCollection('blog'))
-  .filter((post) => !post.data.draft)
-  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  .filter((post) => post.data.draft !== true)
+  .sort((a, b) => {
+    const dateA = b.data.date ? new Date(b.data.date).valueOf() : 0;
+    const dateB = a.data.date ? new Date(a.data.date).valueOf() : 0;
+    return dateA - dateB;
+  });
 ---
 
 <BaseLayout title="Blog" description="Writing and notes by Michele Pascale.">
@@ -14,8 +18,12 @@ const posts = (await getCollection('blog'))
     <p>A personal collection of notes and rambles about things I've learned or found interesting.</p>
   </section>
   <section class="site-shell section">
-    <div class="grid">
-      {posts.map((post) => <PostCard post={post} />)}
-    </div>
+    {posts.length > 0 ? (
+      <div class="grid">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    ) : (
+      <p>No blog posts found yet. Add Markdown files to <code>src/content/blog/</code> with <code>draft: false</code> or no draft field.</p>
+    )}
   </section>
 </BaseLayout>
