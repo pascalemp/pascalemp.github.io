@@ -68,9 +68,9 @@ $$
 The distributional derivative is defined by the integration-by-parts identity
 
 $$
-\int\Omega u,\partial_i\varphi,dx
+\int_\Omega u\, \partial_i\varphi\, dx
 =
--\int_\Omega \varphi,dD_i u,
+-\int_\Omega \varphi\,dD_i u,
 \qquad
 \forall \varphi \in C_c^\infty(\Omega).
 $$
@@ -96,7 +96,7 @@ $$
 =
 \sup
 \left\{
-\int_A \varphi \cdot d(Du)
+\int_A \varphi\,dDu
 :
 \varphi \in C_c(A;\mathbb{R}^N),
 \ \|\varphi\|_\infty \le 1
@@ -120,9 +120,9 @@ $$
 Indeed,
 
 $$
-\int_\Omega u,\operatorname{div}\varphi,dx
+\int_\Omega u\operatorname{div}\varphi\,dx
 =
--\int_\Omega \varphi\cdot d(Du),
+-\int_\Omega \varphi\, dDu,
 $$
 
 so the definition of total variation coincides exactly with the definition of the total variation measure evaluated on $\Omega$.
