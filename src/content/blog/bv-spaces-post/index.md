@@ -120,7 +120,7 @@ $$
 Indeed,
 
 $$
-\int\Omega u,\operatorname{div}\varphi,dx
+\int_\Omega u,\operatorname{div}\varphi,dx
 =
 -\int_\Omega \varphi\cdot d(Du),
 $$
